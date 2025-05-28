@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { ChevronLeft, ChevronRight, Phone, Mail, MapPin, Clock, Award, Users, Heart, Star, MessageCircle, Menu, X } from 'lucide-react';
 
 import Logo from '../assets/logo.png';
@@ -162,100 +161,8 @@ const HomeRehabPhysio = () => {
     return () => window.removeEventListener('scroll', handleActiveSection);
   }, []);
 
-  // SEO data
-  const seoData = {
-    title: "HomeRehab Physio - Professional Home Physiotherapy Services in Durg & Bhilai",
-    description: "Expert physiotherapy services at your doorstep in Durg and Bhilai. Specialized in post-surgery recovery, elderly care, and sports injury rehabilitation. Book your consultation today!",
-    keywords: "physiotherapy, home physiotherapy, physical therapy, rehabilitation, Durg, Bhilai, post-surgery recovery, elderly care, sports injury, Dr. Kalash Malkapure, Dr. Poonam",
-    ogImage: "/img1.jpg", // Using one of your doctor's images for social sharing
-    canonicalUrl: "https://www.homerehab.in", // Replace with your actual domain
-  };
-
   return (
     <div className="app">
-      <Helmet>
-        {/* Primary Meta Tags */}
-        <title>{seoData.title}</title>
-        <meta name="title" content={seoData.title} />
-        <meta name="description" content={seoData.description} />
-        <meta name="keywords" content={seoData.keywords} />
-        
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={seoData.canonicalUrl} />
-        <meta property="og:title" content={seoData.title} />
-        <meta property="og:description" content={seoData.description} />
-        <meta property="og:image" content={seoData.ogImage} />
-
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={seoData.canonicalUrl} />
-        <meta property="twitter:title" content={seoData.title} />
-        <meta property="twitter:description" content={seoData.description} />
-        <meta property="twitter:image" content={seoData.ogImage} />
-
-        {/* Additional Meta Tags */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <meta name="language" content="English" />
-        <meta name="revisit-after" content="7 days" />
-        <meta name="author" content="HomeRehab Physio" />
-        
-        {/* Canonical URL */}
-        <link rel="canonical" href={seoData.canonicalUrl} />
-
-        {/* Structured Data / Schema.org */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "MedicalBusiness",
-            "name": "HomeRehab Physio",
-            "image": [
-              "/img1.jpg",
-              "/img2.jpg"
-            ],
-            "@id": seoData.canonicalUrl,
-            "url": seoData.canonicalUrl,
-            "telephone": "+917999083960",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Durg & Bhilai",
-              "addressRegion": "Chhattisgarh",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 21.1905,
-              "longitude": 81.2849
-            },
-            "openingHoursSpecification": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-              ],
-              "opens": "08:00",
-              "closes": "20:00"
-            },
-            "sameAs": [
-              "https://www.facebook.com/homerehabphysio",
-              "https://www.instagram.com/homerehabphysio"
-            ],
-            "priceRange": "₹₹",
-            "medicalSpecialty": [
-              "Physiotherapy",
-              "Rehabilitation",
-              "Sports Medicine"
-            ]
-          })}
-        </script>
-      </Helmet>
-
       <style jsx>{`
         .app {
           min-height: 100vh;
