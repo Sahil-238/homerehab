@@ -69,7 +69,7 @@ const HomeRehabPhysio = () => {
   const doctors = [
     {
       name: "Dr. Kalash Malkapure",
-      title: "Lead Physiotherapist",
+      title: "Physiotherapist",
       specialization: "Orthopedic & Sports Rehabilitation",
       experience: "5+ years of experience",
       phone: "917999083960",
@@ -77,7 +77,7 @@ const HomeRehabPhysio = () => {
     },
     {
       name: "Dr. Poonam",
-      title: "Senior Physiotherapist",
+      title: "Physiotherapist",
       specialization: "Neurological & Geriatric Care",
       experience: "4+ years of experience",
       phone: "917999917793",
