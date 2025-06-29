@@ -95,10 +95,12 @@ const HomeRehabPhysio = () => {
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % galleryImages.length);
+
   };
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+    
   };
 
   const handleWhatsAppClick = () => {
